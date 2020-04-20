@@ -25,20 +25,21 @@ require 'db.php';
             color:white;
             text-align: center;
             background-color: darkmagenta;
+            cursor: pointer;
         }
         .box{
             border: 6px solid brown;
             width: 400px;
             height: 200px;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 90px;
         }
     </style>
 </head>
 
 <body>
    <div class="container">
-       <h2 class="text-center mt-5" style="font-weight:bold;">Welcome Admin</h2>
+       <h2 class="text-center mt-5" style="font-weight:bold;">Welcome Admin <span class="ml-5"><a href="logout.php" type="button" class="btn btn-primary">Logout</a></span></h2>
    </div>
    
     <?php
@@ -63,11 +64,11 @@ require 'db.php';
                     }
                  ?>
              </select>
-             <input type="submit" name="submit" value="Delete" class="btn btn-danger">
+             <input type="submit" name="submit" value="Delete" class="btn btn-danger ml-3">
          </form> 
      
          <div class="text-center mt-4">
-             <a href="logout.php" type="button" class="btn btn-primary">Logout</a>
+             
          </div>
     </div>
     
